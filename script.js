@@ -1,0 +1,18 @@
+const items=[
+{id:1,name:"Ceramic Vase",category:"Home & Living",price:25,condition:"Like new",icon:"🏺",description:"A lovely decorative vase in excellent condition. Perfect for a shelf or dining table."},
+{id:2,name:"Wooden Toy Set",category:"Toys",price:40,condition:"Good",icon:"🧸",description:"A pre-loved wooden toy set with plenty of play left in it."},
+{id:3,name:"French Press",category:"Coffee Lovers",price:35,condition:"Like new",icon:"☕",description:"A stylish French press for your morning coffee ritual."},
+{id:4,name:"Baby Essentials",category:"Children & Babies",price:30,condition:"Good",icon:"🍼",description:"A bundle of useful baby essentials in good condition."},
+{id:5,name:"Serving Bowl",category:"Home & Living",price:20,condition:"Like new",icon:"🥣",description:"Beautiful serving bowl for everyday meals or entertaining."},
+{id:6,name:"Building Blocks",category:"Toys",price:45,condition:"Good",icon:"🧱",description:"Colourful building blocks ready for their next little builder."},
+{id:7,name:"Coffee Dripper",category:"Coffee Lovers",price:18,condition:"Like new",icon:"🫖",description:"Simple coffee dripper for slow mornings and fresh brews."},
+{id:8,name:"Children's Books",category:"Children & Babies",price:25,condition:"Good",icon:"📚",description:"A small collection of children's books looking for a new reader."}
+];
+let activeCategory="all";let search="";
+const grid=document.querySelector("#itemGrid"),count=document.querySelector("#availableCount"),modal=document.querySelector("#itemModal"),content=document.querySelector("#modalContent");
+function render(){const filtered=items.filter(i=>(activeCategory==="all"||i.category===activeCategory)&&i.name.toLowerCase().includes(search.toLowerCase()));count.textContent=filtered.length;grid.innerHTML=filtered.map(i=>`<article class="item-card" data-id="${i.id}"><div class="item-image">${i.icon}</div><div class="item-info"><span class="status">AVAILABLE</span><div class="meta">${i.category}</div><h3>${i.name}</h3><div class="meta">${i.condition}</div><div class="price">RM${i.price}</div></div></article>`).join("")||"<p>No items found yet.</p>";document.querySelectorAll(".item-card").forEach(card=>card.onclick=()=>openItem(+card.dataset.id))}
+function openItem(id){const i=items.find(x=>x.id===id);content.innerHTML=`<div class="modal-body"><div class="modal-image">${i.icon}</div><div class="modal-copy"><p class="eyebrow">${i.category.toUpperCase()}</p><h2>${i.name}</h2><h3 class="price">RM${i.price}</h3><p><b>Condition:</b> ${i.condition}</p><p>${i.description}</p><a class="button" href="https://wa.me/?text=Hi!%20I'm%20interested%20in%20${encodeURIComponent(i.name)}%20(RM${i.price}).">WhatsApp to enquire</a></div></div>`;modal.showModal()}
+document.querySelectorAll(".category-card").forEach(b=>b.onclick=()=>{activeCategory=b.dataset.category;document.querySelectorAll(".category-card").forEach(x=>x.classList.remove("active"));b.classList.add("active");render();document.querySelector("#items").scrollIntoView({behavior:"smooth"})});
+document.querySelector("#showAll").onclick=()=>{activeCategory="all";document.querySelectorAll(".category-card").forEach(x=>x.classList.toggle("active",x.dataset.category==="all"));render();document.querySelector("#items").scrollIntoView({behavior:"smooth"})};
+document.querySelector("#searchInput").oninput=e=>{search=e.target.value;render()};
+document.querySelector(".close-modal").onclick=()=>modal.close();render();
