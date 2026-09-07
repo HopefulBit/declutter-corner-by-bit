@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Example Ceramic Vase",
+    "category": "Home & Living",
+    "price": 25,
+    "condition": "Like New",
+    "status": "Available",
+    "description": "Replace this example with your own item.",
+    "photos": []
+  }
+]
