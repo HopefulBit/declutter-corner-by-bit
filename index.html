@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Declutter Corner by Bit</title>
+  <meta name="description" content="A curated catalog of pre-loved treasures looking for a new home.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#">DECLUTTER CORNER <span>by Bit</span></a>
+    <nav>
+      <a href="#categories">Categories</a>
+      <a href="#items">Recently Added</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">PRE-LOVED TREASURES</p>
+      <h1>Decluttering my home,<br><em>one lovely item at a time.</em></h1>
+      <p>Browse carefully loved items looking for their next home.</p>
+      <a class="button" href="#items">Explore the collection ↓</a>
+    </section>
+
+    <section class="stats" aria-label="Collection statistics">
+      <div><strong id="availableCount">0</strong><span>Available</span></div>
+      <div><strong>4</strong><span>Categories</span></div>
+      <div><strong>♡</strong><span>Pre-loved</span></div>
+    </section>
+
+    <section id="categories" class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPLORE</p><h2>Browse by category</h2></div>
+        <button id="showAll" class="text-button">Show all items</button>
+      </div>
+      <div class="categories">
+        <button class="category-card active" data-category="all"><span>✦</span><b>All Items</b><small>Everything</small></button>
+        <button class="category-card" data-category="Home & Living"><span>⌂</span><b>Home & Living</b><small>Decor · Kitchen · More</small></button>
+        <button class="category-card" data-category="Children & Babies"><span>♡</span><b>Children & Babies</b><small>Little ones · Essentials</small></button>
+        <button class="category-card" data-category="Coffee Lovers"><span>☕</span><b>Coffee Lovers</b><small>Machines · Accessories</small></button>
+        <button class="category-card" data-category="Toys"><span>★</span><b>Toys</b><small>Fun · Games · Collectibles</small></button>
+      </div>
+    </section>
+
+    <section id="items" class="section items-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE LATEST</p><h2>Recently added</h2></div>
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search items..."></label>
+      </div>
+      <div id="itemGrid" class="item-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Found something you love?</h2>
+    <p>Send me a message and let's give it a new home.</p>
+    <p class="footer-brand">DECLUTTER CORNER <span>by Bit</span></p>
+  </footer>
+
+  <dialog id="itemModal">
+    <button class="close-modal" aria-label="Close">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
