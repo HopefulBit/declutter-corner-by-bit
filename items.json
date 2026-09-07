@@ -1,12 +1,20 @@
 [
   {
     "id": 1,
-    "name": "Example Ceramic Vase",
-    "category": "Home & Living",
-    "price": 25,
-    "condition": "Like New",
+    "name": "Bialetti Coffee Moka Pot Induction Version",
+    "category": "Coffee Lovers",
+    "price": 350,
+    "condition": "As good as new",
     "status": "Available",
-    "description": "Replace this example with your own item.",
-    "photos": []
+    "description": "Usable on an induction cooker. Makes 6 cups, as written on the box. Originally bought at RM425.",
+    "photos": [
+      "images/IMG_9361.jpeg",
+      "images/IMG_9363.jpeg",
+      "images/IMG_9362.jpeg",
+      "images/IMG_9368.jpeg",
+      "images/IMG_9365.jpeg",
+      "images/IMG_9364.jpeg",
+      "images/IMG_9369.jpeg"
+    ]
   }
 ]
