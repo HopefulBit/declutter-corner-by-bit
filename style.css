@@ -336,3 +336,8 @@ dialog::backdrop{background:#2f1f2d99}
   .categories{grid-template-columns:1fr 1fr}
   .section h2{font-size:30px}
 }
+/* Sold items */
+.item-card.sold .item-image{position:relative}
+.item-card.sold .item-image img{filter:brightness(.55) saturate(.65)}
+.item-card.sold .status{background:var(--coral);color:#fff}
+.item-card.sold .item-info{opacity:.78}
