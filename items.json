@@ -32,5 +32,21 @@
       "images/IMG_9521.jpeg",
       "images/IMG_9522.jpeg"
     ]
+  },
+  {
+    "id": 3,
+    "name": "Modern Wood Lamp with Adjustable Head",
+    "category": "Home & Living",
+    "price": 55,
+    "condition": "9/10 rarely used",
+    "status": "Available",
+    "description": "Comes with the adaptor already. Just plug and use. Originally bought at RM79.90. COD at Bangi Avenue.",
+    "photos": [
+      "images/IMG_9372.jpeg",
+      "images/IMG_9370.jpeg",
+      "images/IMG_9371.jpeg",
+      "images/IMG_9373.jpeg",
+      "images/IMG_9374.jpeg"
+    ]
   }
 ]
