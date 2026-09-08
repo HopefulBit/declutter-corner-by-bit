@@ -330,9 +330,11 @@ dialog::backdrop{background:#2f1f2d99}
 }
 
 @media(max-width:480px){
-  .item-grid{grid-template-columns:1fr}
+  .item-grid{grid-template-columns:repeat(2,1fr);gap:12px}
   .categories{grid-template-columns:1fr 1fr}
   .section h2{font-size:30px}
+  .item-info{padding:14px}
+  .item-info h3{font-size:14px}
 }
 /* Sold items */
 .item-card.sold .item-image{position:relative}
