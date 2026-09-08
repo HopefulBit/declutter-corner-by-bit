@@ -63,5 +63,22 @@
       "images/IMG_8980.jpeg",
       "images/IMG_8981.jpeg"
     ]
+  },
+  {
+    "id": 5,
+    "name": "10L Glass Water Dispenser",
+    "category": "Home & Living",
+    "price": 70,
+    "condition": "9/10 rarely used",
+    "status": "Available",
+    "description": "Good quality. Thick glass, real bamboo wood base, sturdy spout. Used once for Christmas dinner for my guests. Bought originally from Spotlight at RM129.90 then.",
+    "photos": [
+      "images/IMG_9095.jpeg",
+      "images/IMG_9094.jpeg",
+      "images/IMG_9098.jpeg",
+      "images/IMG_9100.jpeg",
+      "images/IMG_9101.jpeg",
+      "images/IMG_9102.jpeg"
+    ]
   }
 ]
