@@ -80,5 +80,20 @@
       "images/IMG_9101.jpeg",
       "images/IMG_9102.jpeg"
     ]
+  },
+  {
+    "id": 6,
+    "name": "Ikea Big Glass Container",
+    "category": "Home & Living",
+    "price": 65,
+    "condition": "9/10",
+    "status": "Available",
+    "description": "Good quality glass containers. The big one can fill up 5 kg of laundry detergent. The small one can fill up to 2 kg.",
+    "photos": [
+      "images/IMG_9563.jpeg",
+      "images/IMG_9564.jpeg",
+      "images/IMG_9565.jpeg",
+      "images/IMG_9566.jpeg"
+    ]
   }
 ]
